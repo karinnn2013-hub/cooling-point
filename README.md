@@ -1,55 +1,25 @@
-# Peak-Time Energy Within Reach — GitHub Pages package
+# CoolingPoint Peak Solar Relief
 
-Exported on 6 November 2026 from deployed Site version **148**.
-Source commit: `b3c9137a49b636976459a21c3186a45e85dd80e2`.
+Ready-to-host static website, exported on 2026-11-06.
 
-This is a complete static website. No build step, npm install, backend, database, or API key is required. The existing English/Chinese language switch is included.
+## Deploy with GitHub Pages
 
-## Deploy to GitHub Pages
+1. Extract this ZIP.
+2. Commit the extracted contents to your GitHub repository root. `index.html` must be at the root, beside `assets/` and the CSS and JavaScript files.
+3. Enable GitHub Pages for the repository and publish the root folder of your chosen branch.
 
-1. Extract the ZIP.
-2. Upload **all extracted contents**, including `assets/`, `tools/`, and `.nojekyll`, to the repository root. `index.html` must be directly in the root. Do not upload only the ZIP or add an extra enclosing folder.
-3. Commit to `main`.
-4. Open **Settings → Pages → Build and deployment**. Select **Deploy from a branch**, then **main** and **/(root)**. Click **Save**.
-5. Wait for deployment and open the URL shown in Settings.
-
-Official instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
-
-On macOS, press Command + Shift + . in Finder to reveal `.nojekyll`. Git includes it with `git add .`.
-
-When updating an existing repository, replace the corresponding website files and commit normally. Keep your existing `CNAME` if your repository uses a custom domain.
-
-## Optional Git upload
-
-Create an empty GitHub repository, then run these commands in the extracted directory. Replace the placeholder URL.
-
-```sh
-git init -b main
-git add .
-git commit -m "Deploy website version 148"
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-git push -u origin main
-```
+No dependency installation or build step is required. Keep every file and the existing directory structure. `.nojekyll` is included for static hosting.
 
 ## Local preview
+
+From the extracted folder, run:
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Open http://localhost:8000/ using HTTP so local JSON requests work correctly.
+Open http://localhost:8000/ in your browser. Use a local web server so the animation frame manifest and other fetched assets load correctly.
 
-## Package contents
+The energy panel and its data are included. External reference links and Google Fonts use an internet connection; the website uses fallback fonts if Google Fonts is unavailable.
 
-- `index.html`: main website.
-- `assets/`: images, models, icons, and climate data.
-- `architecture.html`, `technical-architecture.html`, `energy-panel.html`: supporting pages.
-- `Sunroom_Energy_Monitor.html` and `tools/sunroom_pv_runtime.js`: standalone energy monitor and embedded runtime.
-- CSS/JS files: styles and interactions.
-- `.nojekyll`: direct static publishing.
-- `SOURCE_VERSION.json`: source provenance.
-- `FILE_CHECKSUMS.json`: SHA-256 hashes, excluding the checksum file itself.
-
-Internal runtime URLs are relative and support GitHub Pages repository subpaths. Google Fonts is the only external runtime service; CSS fallback fonts remain available.
-
-This package excludes Sites hosting configuration, Git history, credentials, and Blender source projects.
+Source revision: `742b612bb55d8d9bfbf67a913f34f31527d8584c`

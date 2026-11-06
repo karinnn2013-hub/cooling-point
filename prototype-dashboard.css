@@ -65,3 +65,14 @@
 @media(max-width:600px){.approach{padding-bottom:15px}.approach + .prototype{padding-top:0}.approach + .prototype .prototype-dashboard{margin-top:16px}.prototype + .concept-flow.section-wrap{padding-top:34px;padding-bottom:46px}}
 
 @media(max-width:760px){.energy-card iframe{height:830px}}
+
+/* A pinned model shares the page scroll with the two supporting data cards. */
+.prototype-dashboard{align-items:start}
+.prototype-data-rail{display:grid;grid-column:1;grid-row:1;gap:16px;min-width:0;align-content:start}
+.prototype-data-rail .thermal-card,.prototype-data-rail .energy-card{grid-column:auto;grid-row:auto}
+.prototype-space-card{grid-column:2;grid-row:1;display:block;min-height:calc(100svh + 1120px)}
+.prototype-adapt{position:sticky;top:84px;padding-bottom:14px}
+.prototype-adapt .adapt-study-heading{padding-top:16px}
+.prototype-adapt .adapt-study-heading h3{font-size:clamp(23px,2.1vw,31px)}
+.prototype-adapt .adapt-figure figcaption{border:0;margin:0;padding-top:12px}
+@media(max-width:760px){.prototype-dashboard{display:flex}.prototype-space-card{order:0;min-height:calc(100svh + 980px)}.prototype-data-rail{order:1;display:grid;gap:16px}.prototype-adapt{position:sticky;top:max(78px,calc((100svh - 390px)/2))}.prototype-adapt .adapt-study-heading h3{font-size:26px}.prototype-adapt .adapt-figure{padding-left:10px;padding-right:10px}.prototype-space-card .dashboard-card-head{font-size:9px}.prototype-space-card .dashboard-card-head small{font-size:8px}}
