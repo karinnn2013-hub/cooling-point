@@ -1,0 +1,13 @@
+{
+  "site_version": 153,
+  "package_label": "v153",
+  "source_commit": "742b612bb55d8d9bfbf67a913f34f31527d8584c",
+  "export_date": "2026-11-06",
+  "format": "static HTML/CSS/JavaScript",
+  "publishing_source": "main / (root)",
+  "build_required": false,
+  "supplemental_dependencies": [
+    "Sunroom_Energy_Monitor.html",
+    "tools/sunroom_pv_runtime.js"
+  ]
+}
