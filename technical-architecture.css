@@ -1,0 +1,73 @@
+.service-architecture{margin:62px 0 55px;padding-top:34px;border-top:1px solid #bdcdbf;scroll-margin-top:90px;color:#243b2c}
+.arch-heading{display:grid;grid-template-columns:1fr .85fr;gap:70px;align-items:end;margin-bottom:30px}
+.arch-kicker{font:9px/1.6 var(--mono);letter-spacing:.08em;color:#69816d;margin:0 0 15px}
+.arch-heading h3{font-size:clamp(27px,3.1vw,39px);font-weight:500;line-height:1.15;letter-spacing:-.04em;margin:0}
+.arch-heading>p{font-size:12px;line-height:1.8;color:#647268;max-width:450px;margin:0}
+.arch-business-label,.arch-tech-label{display:flex;justify-content:space-between;align-items:center;gap:20px;font:9px/1.6 var(--mono);color:#6f8173;border-bottom:1px solid #cbd8cd;padding-bottom:12px}
+.arch-business-label>span:last-child,.arch-tech-label>span:last-child{font-size:9px;color:#8b978e;text-align:right}
+.arch-business{display:grid;grid-template-columns:1fr 75px 1.1fr 75px 1fr;gap:16px;align-items:center;padding:22px 0}
+.arch-small-label{font:8px/1.6 var(--mono);letter-spacing:.07em;color:#7b8d80}
+.arch-business h4{font:500 14px/1.4 'Montserrat','Noto Sans SC',var(--sans);margin:9px 0 8px;color:#2d4a35;letter-spacing:-.015em}
+.arch-business p{font-size:10px;line-height:1.75;color:#6d7d72;margin:0}
+.arch-business-arrow{text-align:center;align-self:center;display:flex;flex-direction:column;gap:7px;color:#9dac9f}
+.arch-business-arrow>span{font-size:28px;line-height:1}
+.arch-business-arrow small{font:8px/1.5 var(--mono);color:#849187}
+.arch-governance{position:relative;display:flex;align-items:center;justify-content:center;gap:15px;padding:14px 20px 18px;border-top:1px solid #e0e7e0;color:#7c8e80;font-size:9px;line-height:1.5}
+.arch-governance i{height:1px;width:60px;background:#ccd7cd}
+.arch-governance b{position:absolute;left:50%;bottom:-8px;background:#fff;padding:0 8px;font-weight:400;color:#8fa994;font-size:17px;z-index:2}
+.arch-tech-label{padding-top:22px;border-top:1px solid #cbd8cd}
+.arch-engine{display:grid;grid-template-columns:1fr 35px 1.12fr 35px 1fr;gap:12px;padding:22px 0 24px;align-items:stretch}
+.arch-col-label{font:8px/1.5 var(--mono);letter-spacing:.06em;color:#78937e;min-height:25px;margin:0 0 12px}
+.arch-input{display:grid;grid-template-columns:20px 1fr;gap:9px;padding:12px 0;border-top:1px solid #dfe7df}
+.arch-mini-index{font:8px/1.8 var(--mono);color:#96a59a}
+.arch-input h4,.arch-output h4{font:500 13px/1.4 'Montserrat','Noto Sans SC',var(--sans);letter-spacing:-.015em;margin:0 0 5px;color:#34513d}
+.arch-input small{display:block;font:7px/1.5 var(--mono);letter-spacing:.04em;color:#94a299;margin:0 0 6px}
+.arch-input p,.arch-output p{font-size:10px;line-height:1.7;color:#718176;margin:0}
+.arch-signal-arrow{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;padding-top:28px;color:#6b9371}
+.arch-signal-arrow>span{font-size:27px;line-height:1}
+.arch-signal-arrow>small{font:7px/1.4 var(--mono);color:#98a89b}
+.arch-decision{background:#edf3ed;border-top:2px solid #56815b;border-bottom:1px solid #b8ccbc;padding:18px 20px 16px;align-self:stretch}
+.arch-decision .arch-col-label{color:#718f77;min-height:0;margin-bottom:18px}
+.arch-decision-title>span{display:block;font:10px/1.4 var(--mono);color:#6a8a71;margin-bottom:6px}
+.arch-decision-title strong{font:500 24px/1.23 'Montserrat','Noto Sans SC',var(--sans);letter-spacing:-.035em;color:#24492d;display:block;margin-bottom:22px}
+.arch-decision ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:17px}
+.arch-decision li{display:grid;grid-template-columns:14px 1fr;gap:9px}
+.arch-decision li>span{font:9px/1.5 var(--mono);color:#8aab91;margin-top:1px}
+.arch-decision h4{font:500 11px/1.5 'Montserrat','Noto Sans SC',var(--sans);margin:0 0 5px;color:#315a3c}
+.arch-decision li p{font-size:10px;line-height:1.7;margin:0;color:#6e8574}
+.arch-guard{margin-top:20px;padding-top:11px;border-top:1px solid #ccdbce}
+.arch-guard>span{font:7px var(--mono);letter-spacing:.06em;color:#7c9782}
+.arch-guard p{font-size:8px;line-height:1.8;color:#809486;margin:7px 0 0}
+.arch-output{position:relative;border-top:1px solid #dfe7df;padding:14px 0 14px 14px;transition:border-color .2s}
+.arch-output-dot{position:absolute;width:4px;height:4px;border:1px solid #9cb69f;border-radius:50%;left:0;top:20px}
+.arch-output-access{padding-bottom:0}
+.service-architecture[data-scenario=approach] .arch-output-space,.service-architecture[data-scenario=use] .arch-output-cool,.service-architecture[data-scenario=use] .arch-output-air,.service-architecture[data-scenario=leave] .arch-output-access{border-color:#85a48c}
+.arch-energy{display:flex;align-items:center;flex-wrap:wrap;gap:8px 21px;border-top:1px solid #d7c9aa;border-bottom:1px solid #ede7da;padding:14px 0;color:#8a7855}
+.arch-energy-label{font:8px var(--mono);letter-spacing:.07em;color:#ab9670}
+.arch-energy strong{font-size:11px;font-weight:400;line-height:1.6}
+.arch-energy>span:last-child{font-size:8px;line-height:1.6;color:#b4a68a;margin-left:auto}
+.arch-feedback{display:flex;align-items:center;gap:10px;padding:13px 0;color:#869e8c}
+.arch-feedback>span{font-size:18px;line-height:1}
+.arch-feedback p{font:8px/1.6 var(--mono);margin:0}
+.arch-feedback i{flex:1;border-top:1px dashed #c8d7cb}
+.arch-timing{display:grid;grid-template-columns:1fr 1.4fr;gap:16px 40px;border-top:1px solid #cbd8cd;margin-top:8px;padding-top:23px}
+.arch-timing-heading{grid-row:1/3}
+.arch-timing-heading p{font-size:12px;color:#536d5c;line-height:1.6;margin:9px 0 0}
+.arch-scenario-buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.arch-scenario-buttons button{display:flex;align-items:center;gap:8px;border:0;border-bottom:1px solid #dae4db;border-radius:0;background:none;color:#8b9a90;text-align:left;padding:0 0 12px;font-size:11px;cursor:pointer}
+.arch-scenario-buttons button>span:first-child{font:8px var(--mono);color:#a1b0a6}
+.arch-scenario-buttons button>span:last-child[aria-hidden]{margin-left:auto;color:#b5c5ba}
+.arch-scenario-buttons button[aria-pressed=true]{border-color:#4f7b59;color:#315a3c}
+.arch-scenario-buttons button:focus-visible{outline:2px solid #568654;outline-offset:5px}
+.arch-scenario-copy{font-size:11px;line-height:1.8;color:#6a7f70;min-height:60px;margin:0}
+.arch-value{display:flex;align-items:flex-start;justify-content:space-between;gap:60px;margin-top:26px;padding-top:20px;border-top:1px solid #b9cdbd}
+.arch-value strong{font:500 17px/1.5 'Montserrat','Noto Sans SC',var(--sans);letter-spacing:-.02em;color:#355b40;max-width:390px}
+.arch-value p{max-width:500px;font-size:10px;line-height:1.8;color:#7d9083;margin:0}
+.arch-scope{margin:17px 0 0;font-size:8px;line-height:1.8;color:#a0ada4}
+.arch-scope a{color:#819887;text-underline-offset:3px}
+@media(max-width:1000px){.arch-heading{gap:35px}.arch-business{grid-template-columns:1fr 40px 1.1fr 40px 1fr;gap:12px}.arch-business-arrow>span{font-size:23px}.arch-business-arrow small{font-size:7px}.arch-engine{grid-template-columns:1fr 23px 1.1fr 23px 1fr;gap:8px}.arch-decision{padding:16px 13px}.arch-decision-title strong{font-size:21px}.arch-energy>span:last-child{margin-left:0}.arch-timing{gap:15px 25px}}
+@media(max-width:600px){.service-architecture{margin:38px 0 36px;padding-top:26px;scroll-margin-top:112px}.arch-heading{grid-template-columns:1fr;gap:17px;margin-bottom:24px}.arch-heading h3{font-size:29px}.arch-heading>p{font-size:12px}.arch-business-label,.arch-tech-label{font-size:8px;align-items:flex-start;gap:12px}.arch-business-label>span:last-child,.arch-tech-label>span:last-child{max-width:140px;font-size:8px}.arch-business{grid-template-columns:1fr;gap:16px;padding:18px 0}.arch-business article{padding-left:13px;border-left:1px solid #d3dfd5}.arch-business-arrow{align-items:flex-start;flex-direction:row;gap:10px;padding-left:13px}.arch-business-arrow>span{display:block;transform:rotate(90deg);font-size:20px;line-height:1}.arch-business-arrow small{font-size:8px}.arch-business h4{font-size:15px;margin:6px 0}.arch-business p{font-size:11px}.arch-governance{padding:15px 0 18px;gap:10px;justify-content:flex-start;flex-wrap:wrap;font-size:9px}.arch-governance i{width:25px}.arch-tech-label{padding-top:20px}.arch-engine{grid-template-columns:1fr;gap:12px;padding:20px 0}.arch-col-label{font-size:9px;min-height:0;margin-bottom:12px}.arch-input{grid-template-columns:24px 1fr;padding:13px 0}.arch-input h4,.arch-output h4{font-size:14px}.arch-input small{font-size:8px}.arch-input p,.arch-output p{font-size:11px}.arch-signal-arrow{flex-direction:row;gap:9px;padding:0}.arch-signal-arrow>span{transform:rotate(90deg);font-size:25px}.arch-signal-arrow small{font-size:8px}.arch-decision{padding:21px 21px 19px}.arch-decision-title strong{font-size:29px}.arch-decision h4{font-size:13px}.arch-decision li p{font-size:11px}.arch-guard p{font-size:9px}.arch-output{padding:14px 0 14px 15px}.arch-energy{gap:8px 13px;padding:15px 0}.arch-energy-label{font-size:8px}.arch-energy strong{font-size:11px;flex-basis:100%}.arch-energy>span:last-child{font-size:9px}.arch-feedback{align-items:flex-start}.arch-feedback p{font-size:8px}.arch-feedback i{display:none}.arch-timing{grid-template-columns:1fr;gap:17px;padding-top:20px}.arch-timing-heading{grid-row:auto}.arch-timing-heading p{font-size:11px;margin-top:6px}.arch-scenario-buttons{gap:10px}.arch-scenario-buttons button{gap:6px;font-size:11px}.arch-scenario-copy{font-size:11px;min-height:100px}.arch-value{flex-direction:column;gap:12px;margin-top:20px;padding-top:18px}.arch-value strong{font-size:18px}.arch-value p{font-size:10px}.arch-scope{font-size:8px;margin-top:16px}}
+@media(prefers-reduced-motion:reduce){.arch-output{transition:none}}
+
+/* Diagram labels remain legible at normal viewing size. */
+.arch-input p,.arch-output p,.arch-business p{color:#596e60}.arch-input small,.arch-business-arrow small{color:#718477}.arch-decision li p{color:#597461}.arch-scope{color:#7e9385}.arch-input p,.arch-output p{font-size:11px}.arch-col-label{color:#637e6b}.arch-feedback p{color:#6d8776}
