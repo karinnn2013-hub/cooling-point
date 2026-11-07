@@ -1,0 +1,45 @@
+/* Six restrained scenario composites. Building geometry remains the Blender render. */
+.behavior-grid{grid-template-columns:repeat(2,minmax(0,1fr));border-top-color:#c9d4ce}
+.behavior-scene{min-width:0;padding:20px 24px 27px;border-bottom-color:#c9d4ce}
+.behavior-scene:not(:nth-child(3n)){border-right:0}
+.behavior-scene:nth-child(odd){border-right:1px solid #c9d4ce}
+.behavior-art{position:relative;display:block;width:100%;aspect-ratio:12/7;margin-bottom:18px;overflow:hidden;isolation:isolate;background:#fff}
+.behavior-art__field{position:absolute;inset:0;z-index:0;background:#fff}
+.behavior-art--1 .behavior-art__field,.behavior-art--2 .behavior-art__field{background:#fff}
+.behavior-art--3 .behavior-art__field,.behavior-art--4 .behavior-art__field{background:radial-gradient(ellipse 54% 45% at 57% 64%,rgba(180,221,224,.16),transparent 90%),#fff}
+/* Atmosphere is separate from the fixed Blender building and its door/window states. */
+.behavior-art__sunwash,.behavior-art__ground-shadow,.behavior-art__person-shadow{position:absolute;display:none;pointer-events:none}
+.behavior-art--1 .behavior-art__sunwash,.behavior-art--2 .behavior-art__sunwash{display:block;z-index:1;inset:0;background:radial-gradient(ellipse 35% 51% at 31% 49%,rgba(246,203,142,.2),rgba(248,224,184,.09) 56%,transparent 98%)}
+.behavior-art--1 .behavior-art__sunwash{background:radial-gradient(ellipse 38% 54% at 29% 47%,rgba(246,198,127,.29),rgba(248,224,184,.1) 57%,transparent 98%)}
+.behavior-art--1 .behavior-art__sunwash:before,.behavior-art--2 .behavior-art__sunwash:before{content:"";position:absolute;left:13%;top:20%;width:58%;height:70%;background:linear-gradient(140deg,rgba(241,195,123,.3),rgba(241,195,123,.13) 55%,transparent 96%);clip-path:polygon(2% 0,13% 0,100% 100%,64% 100%);filter:blur(7px);opacity:.72}
+.behavior-art--2 .behavior-art__sunwash:before{opacity:.47}
+.behavior-art__ground-plane{position:absolute;z-index:1;left:6%;right:4%;top:82%;height:1px;background:linear-gradient(90deg,transparent,rgba(116,145,134,.23) 18%,rgba(116,145,134,.23) 80%,transparent);transform:rotate(-1.5deg);pointer-events:none}
+.behavior-art--1 .behavior-art__ground-shadow,.behavior-art--2 .behavior-art__ground-shadow{display:block;z-index:1;left:27%;top:69%;width:55%;height:16%;background:radial-gradient(ellipse 70% 39% at 50% 50%,rgba(101,105,92,.14),transparent 92%);transform:skewX(-19deg);filter:blur(4px)}
+.behavior-art--2 .behavior-art__ground-shadow{left:30%;top:71%;width:55%;height:15%;opacity:.65}
+.behavior-art--1 .behavior-art__person-shadow,.behavior-art--2 .behavior-art__person-shadow{display:block;z-index:1;left:20%;top:77%;width:27%;height:8%;background:rgba(100,99,83,.2);clip-path:polygon(0 0,8% 0,100% 74%,95% 100%);filter:blur(1.2px)}
+.behavior-art--2 .behavior-art__person-shadow{left:31%;top:79%;width:21%;opacity:.75}
+.behavior-art__plant{position:absolute;z-index:1;display:block;height:auto;max-width:none;object-fit:contain;filter:saturate(.36) contrast(.78) brightness(1.13);opacity:.42;pointer-events:none}
+.behavior-art__plant--tree-far-right{right:-4%;bottom:16%;width:17%;opacity:.33}
+.behavior-art__plant--shrub-far-right{right:-9%;bottom:17%;width:26%;opacity:.36}
+.behavior-art__plant--shrub-far-left{left:-9%;bottom:17%;width:27%;opacity:.35}
+.behavior-art__plant--grass-far-left{left:-13%;bottom:8%;width:32%;opacity:.4}
+.behavior-art__plant--grass-far-right{right:-14%;bottom:9%;width:34%;opacity:.4}
+.behavior-art--4 .behavior-art__plant--tree-far-right{right:-3%;bottom:14%;width:15%;opacity:.3}
+.behavior-art__house{position:absolute;z-index:2;display:block;width:130%;height:130%;max-width:none;top:-15%;left:-15%;object-fit:contain;mix-blend-mode:multiply;filter:brightness(.8) contrast(2) saturate(.85)}
+.behavior-art--1 .behavior-art__house{width:93%;height:101%;top:1%;left:18%}
+.behavior-art--3 .behavior-art__house{width:126%;height:126%;top:-13%;left:-13%}
+.behavior-art--5 .behavior-art__house{width:105%;height:105%;top:-2%;left:-8%}
+.behavior-art__figure{position:absolute;z-index:3;display:block;height:auto;max-width:none;object-fit:contain;filter:saturate(.43) contrast(.9) brightness(1.06);opacity:.84}
+.behavior-art__figure--walking{width:11%;left:8%;bottom:22%}
+.behavior-art__figure--standing{width:10%;left:24%;bottom:20%}
+.behavior-art__figure--departing{width:11%;left:80%;bottom:22%;transform:scaleX(-1)}
+.behavior-art__figure--outside-seated{width:10%;left:34%;bottom:24%}
+.behavior-art__figure--inside-grounds{z-index:1;width:6.5%;left:47%;bottom:30%;opacity:.58}
+.behavior-art__figure--inside-pair{z-index:1;width:12%;left:40%;bottom:32%;opacity:.6}
+.behavior-art__marks,.behavior-scene svg.behavior-art__marks{position:absolute;inset:0;z-index:4;display:block;width:100%;height:100%;max-height:none;margin:0;pointer-events:none}
+.behavior-caption{grid-template-columns:35px 1fr;gap:11px}
+.behavior-number{color:#3e8660;font-size:12px;padding-top:2px}
+.behavior-caption h3{font-size:clamp(17px,1.55vw,23px);margin-bottom:7px}
+.behavior-caption p{max-width:540px;font-size:13px;line-height:1.55}
+@media(max-width:1100px){.behavior-grid{grid-template-columns:1fr}.behavior-scene{border-right:0!important;padding:17px 16px 22px}.behavior-caption h3{font-size:17px}.behavior-caption p{font-size:12px}}
+@media(max-width:600px){.behavior-scene{padding:17px 0 24px}.behavior-art{margin-bottom:14px}.behavior-caption{grid-template-columns:30px 1fr;gap:8px;padding:0 3px}.behavior-number{font-size:11px}.behavior-caption h3{font-size:17px}.behavior-caption p{font-size:12px;max-width:470px}}

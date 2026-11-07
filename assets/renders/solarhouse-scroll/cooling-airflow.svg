@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 1240" fill="none" role="img" aria-label="Illustrative cool air flowing out through the open front doors">
+  <defs>
+    <linearGradient id="cooling-flow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#83b7cb" stop-opacity=".24"/>
+      <stop offset=".48" stop-color="#70a9c2" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#397fae" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <!-- Each tail begins inside a folding-door bay. The tips point south,
+       toward the viewer, matching the front axonometric projection. -->
+  <g fill="url(#cooling-flow)" stroke="#5b97ba" stroke-width="3" stroke-linejoin="round">
+    <path d="M 746 748 C 725 773 705 798 681 826 C 661 848 640 864 617 879 L 630 889 L 580 908 L 602 859 L 610 872 C 634 855 655 835 677 813 C 707 782 730 762 746 748 Z"/>
+    <path d="M 1024 813 C 1001 835 980 862 958 890 C 934 921 908 942 880 960 L 893 972 L 840 992 L 862 940 L 872 953 C 898 934 922 910 945 882 C 977 843 1002 824 1024 813 Z"/>
+    <path d="M 1333 895 C 1309 916 1284 942 1263 970 C 1238 1002 1208 1028 1177 1047 L 1191 1060 L 1136 1081 L 1158 1026 L 1169 1040 C 1197 1021 1225 995 1250 963 C 1281 925 1308 904 1333 895 Z"/>
+  </g>
+</svg>
