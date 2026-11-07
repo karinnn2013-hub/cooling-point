@@ -880,7 +880,9 @@ function render(){
  current.embedNetScale=balanceScale(current.vertices.map(v=>v.balanceAfter));current.embedPowerScale={min:0,...tickCeiling(Math.max(...current.points.flatMap(p=>[p.pv,p.total])))};
  $('prev').disabled=state.date===data.days[0].date;$('next').disabled=state.date===data.days.at(-1).date;
  $('surplus-before').textContent=f(v.balanceBefore);$('surplus-used').textContent=f(v.balanceAfter);
- const carryNote=`${t('openingBalance')} <b>${f(v.openingBalance)} kWh</b> · ${t('carryBasis')} ${state.carryDays} ${t('dayUnit')}`;
+ const carryNote=document.documentElement.classList.contains('energy-card-embed')
+  ? `<b>${f(v.openingBalance)} kWh</b>`
+  : `${t('openingBalance')} <b>${f(v.openingBalance)} kWh</b> · ${t('carryBasis')} ${state.carryDays} ${t('dayUnit')}`;
  $('carryover-before').innerHTML=carryNote;
  const night=nightDetails(),pvStart=night.firstPv?hm(night.firstPv.start):(state.lang==='zh'?'当天无发电':'none this day');
  const nightNote=state.lang==='zh'?`00–08 时模拟用电 ${f(night.min)}–${f(night.max)} kW · 光伏开始 ${pvStart}`:`00–08 modeled demand ${f(night.min)}–${f(night.max)} kW · PV starts ${pvStart}`;

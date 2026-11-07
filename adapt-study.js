@@ -6,7 +6,6 @@
   if (!story || !study || !figure || !base) return;
 
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const phaseLabels = [...study.querySelectorAll('[data-scroll-phase]')];
   const assetRoot = 'assets/renders/solarhouse-scroll/';
   const clamp = (value, min = 0, max = 1) => Math.min(max, Math.max(min, value));
   let frames = [];
@@ -87,7 +86,6 @@
       ? 'Front axonometric view of the solar room with doors and windows opening; blue arrows illustrate cooling airflow'
       : camera >= 1 ? 'Front axonometric view of the solar room with closed doors and windows'
       : 'Turning from the roof plan showing 36 photovoltaic panels toward the front axonometric view';
-    phaseLabels.forEach((label) => label.classList.toggle('is-current', label.dataset.scrollPhase === phase));
   }
 
   window.addEventListener('scroll', requestPaint, { passive: true });
